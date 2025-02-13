@@ -2,6 +2,7 @@
     --ff-montserrat: 'Montserrat', sans-serif;
     --ff-inter: 'Inter', sans-serif;
     --shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.25) ;
+    --gradient: linear-gradient(225deg, #d4a86e 0%, #674923 100%);
 }
 /* roots and utils*/
 body{
@@ -15,8 +16,14 @@ a{
 .shadow{
     box-shadow: var(--shadow);
 }
-.dropdown-toggle::after{
-    display: none;
+.text-balance{
+    text-wrap: balance;
+}
+.fs-title{
+    font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+}
+.fs-paragraph{
+    font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
 }
 /* Scroller */
 ::-webkit-scrollbar {
@@ -46,14 +53,38 @@ header{
 main{
     margin-top: 117px;
 }
+.btn-corp{
+    width: fit-content;
+    background: var(--gradient);
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    box-shadow: var(--shadow);
+    font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+}
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: unset;
+    border-color: unset;
+}
+.dropdown-toggle::after {
+    display: none;
+}
 .nav-link{
     font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+    color: black;
 }
 .navbar-toggler-icon{
     background-image: url('icons/burger.png');
 }
 .navbar-toggler:focus {
     box-shadow: unset;
+}
+.dropdown-menu {
+    --bs-dropdown-min-width: unset;
 }
 
 /*breackpoints*/
@@ -65,7 +96,7 @@ main{
     .container-sm,
     .container-xl,
     .container-xxl {
-        max-width: 1650px;
+        max-width: 1500px;
     }
 }
 @media (max-width: 576px){
@@ -73,4 +104,7 @@ main{
         width: 50px;
         height: 60px;
     }
+    .btn-corp{
+        padding: 10px 30px;
+}
 }
