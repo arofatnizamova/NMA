@@ -75,6 +75,14 @@ $(document).ready(function () {
     },
   ] 
       }
+    }else if (slider.hasClass('partners')) {
+      extraOptions = {
+        slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          autoPlay: true,
+          dots: false,
+      }
     }
     slider.slick($.extend({}, extraOptions, options ));
   })
