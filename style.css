@@ -18,7 +18,7 @@ a{
     font-family: var(--ff-inter);
 }
 .shadow{
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow) !important;
 }
 .text-balance{
     text-wrap: balance;
@@ -40,6 +40,9 @@ a{
 }
 .fs-paragraph{
     font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+}
+.fs-paragraph-2{
+    font-size: clamp(1.625rem, 1.575rem + 0.25vw, 1.875rem);
 }
 .fs-section-title{
     font-size: clamp(1.375rem, 1.175rem + 1vw, 2.375rem);
@@ -258,6 +261,15 @@ main{
     font-weight: 300;
     font-size: 28px;
 }
+.team-card{
+    height: 230px;
+}
+.team-img{
+    height: 450px;
+}
+.modal{
+    backdrop-filter: blur(5px);
+}
 /*breackpoints*/
 @media (min-width: 1650px) {
 
@@ -289,4 +301,11 @@ main{
     .btn-corp{
         padding: 10px 30px;
 }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
