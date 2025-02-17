@@ -83,6 +83,25 @@ $(document).ready(function () {
           autoPlay: true,
           dots: false,
       }
+    }else if (slider.hasClass('table')) {
+      extraOptions = {
+        slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          autoPlay: true,
+        dots: false,
+          responsive: [
+          {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 0.5,
+        slidesToScroll: 0.5,
+        arrows: true
+      }
+          },
+      
+  ]
+      }
     }
     slider.slick($.extend({}, extraOptions, options ));
   })
