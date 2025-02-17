@@ -251,7 +251,13 @@ main{
     left: 50%;
     transform: translateX(-50%);
 }
-
+.mission-icon{
+    width: 140px;
+}
+.number-2{
+    font-weight: 300;
+    font-size: 28px;
+}
 /*breackpoints*/
 @media (min-width: 1650px) {
 
