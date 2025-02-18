@@ -45,6 +45,9 @@ a{
 .fs-paragraph-2{
     font-size: clamp(1.625rem, 1.575rem + 0.25vw, 1.875rem);
 }
+.fs-paragraph-3{
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
 .fs-section-title{
     font-size: clamp(1.375rem, 1.175rem + 1vw, 2.375rem);
 }
@@ -283,6 +286,26 @@ main{
 .slider-prev:hover, .slider-next:hover{
     opacity: 0.5;
 }
+.light-gradien{
+    background-size: cover;
+    /* border: 60px solid black; */
+    z-index: -2;
+        -webkit-mask-image: linear-gradient(90deg, #fff 25.5%, rgba(255, 255, 255, 0.9) 45.41%, rgba(255, 255, 255, 0.1) 73.33%, rgba(255, 255, 255, 0) 100%) !important;
+        mask-image: linear-gradient(90deg, #fff 25.5%, rgba(255, 255, 255, 0.9) 45.41%, rgba(255, 255, 255, 0.1) 73.33%, rgba(255, 255, 255, 0) 100%) !important;
+}
+.bg-clients-1{
+    background: url('/images/clients/bg-clients-1.png') no-repeat;
+    min-height: 680px;
+}
+.bg-clients-2 {
+    background: url('/images/clients/bg-clients-2.png') no-repeat;
+    min-height: 680px;
+}
+.img-sm-fluid{
+    width: 940px;
+    height: 684px;
+    object-fit: cover;
+}
 /*breackpoints*/
 @media (min-width: 1650px) {
 
@@ -306,6 +329,23 @@ main{
             bottom: 1.5rem;
             left: 1.5rem;
         }
+        .bg-clients-1 {
+            background: unset;
+        }
+        .list-icon img{
+            width: 100px;
+        }
+        .shadow-none{
+            box-shadow: unset !important;
+        }
+        .img-sm-fluid{
+            max-width: 100%;
+            height: auto;
+        }
+        .light-gradien{
+            -webkit-mask-image: linear-gradient(180deg, #fff 25.5%, rgba(255, 255, 255, 0.9) 45.41%, rgba(255, 255, 255, 0.05) 73.33%, rgba(255, 255, 255, 0) 100%) !important;
+                mask-image: linear-gradient(180deg, #fff 25.5%, rgba(255, 255, 255, 0.9) 45.41%, rgba(255, 255, 255, 0.05) 73.33%, rgba(255, 255, 255, 0) 100%) !important;
+        }
 }
 @media (max-width: 576px){
     .logo{
@@ -317,6 +357,9 @@ main{
     }
     .btn-corp{
         padding: 10px 30px;
+}
+.ngmk-img{
+    width: 170px;
 }
 }
 @media (min-width: 576px) {
