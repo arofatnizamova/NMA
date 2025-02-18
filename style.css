@@ -293,18 +293,17 @@ main{
         -webkit-mask-image: linear-gradient(90deg, #fff 25.5%, rgba(255, 255, 255, 0.9) 45.41%, rgba(255, 255, 255, 0.1) 73.33%, rgba(255, 255, 255, 0) 100%) !important;
         mask-image: linear-gradient(90deg, #fff 25.5%, rgba(255, 255, 255, 0.9) 45.41%, rgba(255, 255, 255, 0.1) 73.33%, rgba(255, 255, 255, 0) 100%) !important;
 }
-.bg-clients-1{
-    background: url('/images/clients/bg-clients-1.png') no-repeat;
-    min-height: 680px;
-}
-.bg-clients-2 {
-    background: url('/images/clients/bg-clients-2.png') no-repeat;
-    min-height: 680px;
-}
+
 .img-sm-fluid{
     width: 940px;
     height: 684px;
     object-fit: cover;
+}
+.line-corp{
+    border-bottom: 2px solid var(--color-gold);
+}
+.h-map{
+    height: 100%;
 }
 /*breackpoints*/
 @media (min-width: 1650px) {
@@ -346,6 +345,9 @@ main{
             -webkit-mask-image: linear-gradient(180deg, #fff 25.5%, rgba(255, 255, 255, 0.9) 45.41%, rgba(255, 255, 255, 0.05) 73.33%, rgba(255, 255, 255, 0) 100%) !important;
                 mask-image: linear-gradient(180deg, #fff 25.5%, rgba(255, 255, 255, 0.9) 45.41%, rgba(255, 255, 255, 0.05) 73.33%, rgba(255, 255, 255, 0) 100%) !important;
         }
+                .h-map {
+                    height: 350px;
+                }
 }
 @media (max-width: 576px){
     .logo{
